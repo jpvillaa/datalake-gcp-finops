@@ -1,0 +1,67 @@
+2024-11-23 16:45:21 - INFO - Archivo de log: ./logs/execution_log_20241123_164521.log
+2024-11-23 16:45:21 - INFO - Inicio del proceso de carga
+2024-11-23 16:45:21 - INFO - Tablas encontradas: ['production.product', 'production.productcategory', 'production.productcosthistory', 'production.productdescription', 'production.productsubcategory', 'production.transactionhistory', 'production.transactionhistoryarchive']
+2024-11-23 16:45:21 - INFO - Iniciando carga a la zona temporal...
+2024-11-23 16:45:21 - INFO - Conexión a la base de datos establecida.
+2024-11-23 16:45:21 - INFO - Consultando datos de la tabla production.product...
+2024-11-23 16:45:21 - ERROR - Error procesando la tabla production.product: (psycopg2.errors.SyntaxError) error de sintaxis en o cerca de «'size'»
+LINE 12:     cast(size as text) as 'size',
+                                   ^
+
+[SQL: SELECT 
+    cast(productid as text) as productid,
+    cast(name as text) as name,
+    cast(productnumber as text) as productnumber,
+    cast(makeflag as text) as makeflag,
+    cast(finishedgoodsflag as text) as finishedgoodsflag,
+    cast(color as text) as color,
+    cast(safetystocklevel as text) as safetystocklevel,
+    cast(reorderpoint as text) as reorderpoint,
+    cast(standardcost as text) as standardcost,
+    cast(listprice as text) as listprice,
+    cast(size as text) as 'size',
+    cast(sizeunitmeasurecode as text) as sizeunitmeasurecode,
+    cast(weightunitmeasurecode as text) as weightunitmeasurecode,
+    cast(weight as text) as weight,
+    cast(daystomanufacture as text) as daystomanufacture,
+    cast(productline as text) as productline,
+    cast(class as text) as class,
+    cast(style as text) as style,
+    cast(productsubcategoryid as text) as productsubcategoryid,
+    cast(productmodelid as text) as productmodelid,
+    cast(sellstartdate as text) as sellstartdate,
+    cast(sellenddate as text) as sellenddate,
+    cast(discontinueddate as text) as discontinueddate,
+    cast(rowguid as text) as rowguid,
+    cast(modifieddate as text) as modifieddate,
+    cast(current_date as text) AS ingestion_date,
+    'production.product' AS data_source,
+    cast(session_user as text) AS current_user
+FROM production.product;
+]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-11-23 16:45:21 - INFO - Consultando datos de la tabla production.productcategory...
+2024-11-23 16:45:21 - INFO - Archivo temporal creado: temp/production.productcategory_20241123.parquet
+2024-11-23 16:45:22 - INFO - Archivo subido a GCS: temp/production.productcategory/production.productcategory_20241123.parquet
+2024-11-23 16:45:22 - INFO - Archivo temporal eliminado: temp/production.productcategory_20241123.parquet
+2024-11-23 16:45:22 - INFO - Consultando datos de la tabla production.productcosthistory...
+2024-11-23 16:45:22 - INFO - Archivo temporal creado: temp/production.productcosthistory_20241123.parquet
+2024-11-23 16:45:23 - INFO - Archivo subido a GCS: temp/production.productcosthistory/production.productcosthistory_20241123.parquet
+2024-11-23 16:45:23 - INFO - Archivo temporal eliminado: temp/production.productcosthistory_20241123.parquet
+2024-11-23 16:45:23 - INFO - Consultando datos de la tabla production.productdescription...
+2024-11-23 16:45:23 - INFO - Archivo temporal creado: temp/production.productdescription_20241123.parquet
+2024-11-23 16:45:24 - INFO - Archivo subido a GCS: temp/production.productdescription/production.productdescription_20241123.parquet
+2024-11-23 16:45:24 - INFO - Archivo temporal eliminado: temp/production.productdescription_20241123.parquet
+2024-11-23 16:45:24 - INFO - Consultando datos de la tabla production.productsubcategory...
+2024-11-23 16:45:24 - INFO - Archivo temporal creado: temp/production.productsubcategory_20241123.parquet
+2024-11-23 16:45:24 - INFO - Archivo subido a GCS: temp/production.productsubcategory/production.productsubcategory_20241123.parquet
+2024-11-23 16:45:24 - INFO - Archivo temporal eliminado: temp/production.productsubcategory_20241123.parquet
+2024-11-23 16:45:24 - INFO - Consultando datos de la tabla production.transactionhistory...
+2024-11-23 16:45:25 - INFO - Archivo temporal creado: temp/production.transactionhistory_20241123.parquet
+2024-11-23 16:45:26 - INFO - Archivo subido a GCS: temp/production.transactionhistory/production.transactionhistory_20241123.parquet
+2024-11-23 16:45:26 - INFO - Archivo temporal eliminado: temp/production.transactionhistory_20241123.parquet
+2024-11-23 16:45:26 - INFO - Consultando datos de la tabla production.transactionhistoryarchive...
+2024-11-23 16:45:27 - INFO - Archivo temporal creado: temp/production.transactionhistoryarchive_20241123.parquet
+2024-11-23 16:45:28 - INFO - Archivo subido a GCS: temp/production.transactionhistoryarchive/production.transactionhistoryarchive_20241123.parquet
+2024-11-23 16:45:28 - INFO - Archivo temporal eliminado: temp/production.transactionhistoryarchive_20241123.parquet
+2024-11-23 16:45:28 - INFO - Fin del proceso de carga
