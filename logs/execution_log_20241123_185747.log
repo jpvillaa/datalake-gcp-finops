@@ -1,0 +1,34 @@
+2024-11-23 18:57:47 - INFO - Archivo de log: ./logs/execution_log_20241123_185747.log
+2024-11-23 18:57:47 - INFO - Inicio del proceso de carga
+2024-11-23 18:57:47 - INFO - Tablas encontradas: ['production.product', 'production.productcategory', 'production.productcosthistory', 'production.productdescription', 'production.productsubcategory', 'production.transactionhistory', 'production.transactionhistoryarchive']
+2024-11-23 18:57:47 - INFO - Iniciando carga a la zona temporal...
+2024-11-23 18:57:47 - INFO - Conexión a la base de datos establecida.
+2024-11-23 18:57:47 - INFO - Consultando datos de la tabla production.product...
+2024-11-23 18:57:47 - INFO - Archivo temporal creado: temp/production.product_20241123.parquet
+2024-11-23 18:57:48 - INFO - Archivo subido a GCS: production.product/production.product_20241123.parquet
+2024-11-23 18:57:48 - INFO - Archivo temporal eliminado: temp/production.product_20241123.parquet
+2024-11-23 18:57:48 - INFO - Consultando datos de la tabla production.productcategory...
+2024-11-23 18:57:48 - INFO - Archivo temporal creado: temp/production.productcategory_20241123.parquet
+2024-11-23 18:57:49 - INFO - Archivo subido a GCS: production.productcategory/production.productcategory_20241123.parquet
+2024-11-23 18:57:49 - INFO - Archivo temporal eliminado: temp/production.productcategory_20241123.parquet
+2024-11-23 18:57:49 - INFO - Consultando datos de la tabla production.productcosthistory...
+2024-11-23 18:57:49 - INFO - Archivo temporal creado: temp/production.productcosthistory_20241123.parquet
+2024-11-23 18:57:49 - INFO - Archivo subido a GCS: production.productcosthistory/production.productcosthistory_20241123.parquet
+2024-11-23 18:57:49 - INFO - Archivo temporal eliminado: temp/production.productcosthistory_20241123.parquet
+2024-11-23 18:57:49 - INFO - Consultando datos de la tabla production.productdescription...
+2024-11-23 18:57:49 - INFO - Archivo temporal creado: temp/production.productdescription_20241123.parquet
+2024-11-23 18:57:50 - INFO - Archivo subido a GCS: production.productdescription/production.productdescription_20241123.parquet
+2024-11-23 18:57:50 - INFO - Archivo temporal eliminado: temp/production.productdescription_20241123.parquet
+2024-11-23 18:57:50 - INFO - Consultando datos de la tabla production.productsubcategory...
+2024-11-23 18:57:50 - INFO - Archivo temporal creado: temp/production.productsubcategory_20241123.parquet
+2024-11-23 18:57:51 - INFO - Archivo subido a GCS: production.productsubcategory/production.productsubcategory_20241123.parquet
+2024-11-23 18:57:51 - INFO - Archivo temporal eliminado: temp/production.productsubcategory_20241123.parquet
+2024-11-23 18:57:51 - INFO - Consultando datos de la tabla production.transactionhistory...
+2024-11-23 18:57:51 - INFO - Archivo temporal creado: temp/production.transactionhistory_20241123.parquet
+2024-11-23 18:57:52 - INFO - Archivo subido a GCS: production.transactionhistory/production.transactionhistory_20241123.parquet
+2024-11-23 18:57:52 - INFO - Archivo temporal eliminado: temp/production.transactionhistory_20241123.parquet
+2024-11-23 18:57:52 - INFO - Consultando datos de la tabla production.transactionhistoryarchive...
+2024-11-23 18:57:53 - INFO - Archivo temporal creado: temp/production.transactionhistoryarchive_20241123.parquet
+2024-11-23 18:57:54 - INFO - Archivo subido a GCS: production.transactionhistoryarchive/production.transactionhistoryarchive_20241123.parquet
+2024-11-23 18:57:54 - INFO - Archivo temporal eliminado: temp/production.transactionhistoryarchive_20241123.parquet
+2024-11-23 18:57:54 - INFO - Fin del proceso de carga
